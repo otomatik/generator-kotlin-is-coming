@@ -50,7 +50,7 @@ v1.0: basic Kotlin configuration
 6. Submit a pull request :D
 
 ## Spread the word (and love)
-If you found this generator useful you can tweet just by clicking [here](https://goo.gl/lsIE8D)!
+If you found this generator useful you can tweet just by clicking [here](https://goo.gl/U8eA0o)!
 
 ## Credits
 Inspired by the [generator-android-square-stack](https://raw.githubusercontent.com/kuhnza/generator-android-square-stack)

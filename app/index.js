@@ -116,7 +116,7 @@ module.exports = yeoman.generators.Base.extend({
   },
   end: function() {
     this.log(yosay(
-      'Thanks for using this generator! If you found it useful follow this link ' + chalk.green('https://goo.gl/lsIE8D') + ' to tweet and spread the word.'
+      'Thanks for using this generator! If you found it useful follow this link ' + chalk.green('https://goo.gl/U8eA0o') + ' to tweet and spread the word.'
     ));
   }
 });

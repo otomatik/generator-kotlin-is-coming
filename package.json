@@ -1,6 +1,6 @@
 {
   "name": "generator-kotlin-is-coming",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Android kotlin scaffolder",
   "main": "app/index.js",
   "scripts": {
