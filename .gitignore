@@ -1,0 +1,8 @@
+.DS_Store
+*.iml
+.idea/
+node_modules/
+app.iml
+npm-debug.log
+test/npm-debug.log
+app/templates/.gradle/

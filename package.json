@@ -1,0 +1,35 @@
+{
+  "name": "generator-kotlin-is-coming",
+  "version": "1.0.0",
+  "description": "Android kotlin scaffolder",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otomatik/generator-kotlin-is-coming.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "android",
+    "kotlin"
+  ],
+  "author": "Thomas Dalous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otomatik/generator-kotlin-is-coming/issues"
+  },
+  "dependencies": {
+    "yeoman-generator": "^0.18.0",
+    "chalk": "^0.5.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "homepage": "https://github.com/otomatik/generator-kotlin-is-coming#readme"
+}

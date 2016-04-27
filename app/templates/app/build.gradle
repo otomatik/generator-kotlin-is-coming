@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "<%= appPackage %>"
+        minSdkVersion <%= androidMinSdkVersion %>
+        targetSdkVersion <%= androidTargetSdkVersion %>
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.java.srcDirs += 'src/test/kotlin'
+        main.java.srcDirs += 'src/androidTest/kotlin'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile kotlib
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    compile "junit:junit:$junitVersion"
+}
+
+kapt {
+    generateStubs = <%= kaptGenerateStubs %>
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
