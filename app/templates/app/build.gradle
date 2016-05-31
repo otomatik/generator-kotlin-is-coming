@@ -23,8 +23,8 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-        main.java.srcDirs += 'src/test/kotlin'
-        main.java.srcDirs += 'src/androidTest/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+        test.java.srcDirs += 'src/androidTest/kotlin'
     }
 }
 
@@ -32,7 +32,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile kotlib
     compile "com.android.support:appcompat-v7:$supportLibVersion"
-    compile "junit:junit:$junitVersion"
+    testCompile "junit:junit:$junitVersion"
 }
 
 kapt {
